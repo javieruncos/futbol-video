@@ -1,4 +1,19 @@
-.portadaMenu {
+.portadaMenu{
+    height: 300px;
+    width: 100%;
+    background-color: #191919;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+.MenuTorneos {
     height: 180px;
     width: 100%;
     display: flex;
@@ -44,4 +59,9 @@
 .escudo img{
     height:40px;
     width: 40px;
+}
+
+.escudo:hover{
+   background-color:rgb(87, 86, 86);
+    transition: 0.5s ease;
 }

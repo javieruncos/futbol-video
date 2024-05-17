@@ -1,10 +1,28 @@
 import React from 'react';
 import "../../assets/style/Inicio.css";
 import PortadaMenu from '../Ui/PortadaMenu';
+import Categorias from '../Ui/Categorias';
 const Inicio = () => {
     return (
-        <div className='mainInicio mt-4'> 
+        <div className='mainInicio mt-4'>
             <PortadaMenu></PortadaMenu>
+            <div className='mt-3'>
+                <Categorias categoria={"Todos"}></Categorias>
+            </div>
+            <div className='mt-3'>
+                <Categorias categoria={"ligas"}></Categorias>
+            </div>
+            <div className='separador my-5'>
+                <div>
+                    <span>logo</span>
+                </div>
+            </div>
+            <div className='mt-3'>
+                <Categorias categoria={"copas"}></Categorias>
+            </div>
+            <div className='mt-3'>
+                <Categorias categoria={"copas"}></Categorias>
+            </div>
         </div>
     );
 };
