@@ -1,11 +1,28 @@
 import React from 'react';
-import "../../assets/style/PortadaMenu.css"
+import "../../assets/style/PortadaMenu.css";
+import jugadores from "../../assets/img/jugadores.png"
 const PortadaMenu = () => {
     return (
         <>
             <div className='portadaMenu my-3'>
-                <div className='container'>
-                    <h1> menu</h1>
+                <img src="https://images.alphacoders.com/510/510026.jpg" alt="" />
+                <div className='capa-portada'>
+                    <div className='row'>
+                        <div className='col-12 col-md-6 col-lg-6'>
+                            <div className='container pt-4'>
+                                <h1 className='display-4 fw-bold'>Sport Resultados</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, dignissimos!</p>
+                                <button className='btn btn-secondary w-50'>Ver todos</button>
+                            </div>
+                        </div>
+                        <div className='col-12 col-md-6 col-lg-6'>
+                            <div className='container-img'>
+                                <img src={jugadores} alt="jugadores real madrid" />
+                            </div>
+                        </div>
+
+                    </div>
+                  
                 </div>
             </div>
             <div className='MenuTorneos'>
@@ -15,10 +32,10 @@ const PortadaMenu = () => {
                             <div className='equiposMenu'>
                                 <div className='equipoNombre'>
                                     <div className='escudo'>
-                                        <img src="https://www.freeiconspng.com/uploads/real-madrid-logo-png-1.png" alt="" />
+                                        <img src="https://turismo.org/wp-content/uploads/2010/09/Bandera-de-Inglaterra.png" alt="" />
                                     </div>
                                     <div className=' w-100 d-flex justify-content-center align-items-center pt-4'>
-                                        <span>Real Madrid</span>
+                                        <span>Inglaterra</span>
                                     </div>
                                 </div>
                             </div>
@@ -27,10 +44,10 @@ const PortadaMenu = () => {
                             <div className='equiposMenu'>
                                 <div className='equipoNombre'>
                                     <div className='escudo'>
-                                        <img src="https://1.bp.blogspot.com/-Ok3NEcPXVSw/XwI2bRzkRxI/AAAAAAAAQr4/w07J3peUsWEryGizvVpTQrGbTXQ2ezKfwCLcBGAsYHQ/s1600/bayern%2Bmunich%2Blogo.png" alt="" />
+                                        <img src="https://flagcdn.com/w2560/de.png" alt="" />
                                     </div>
                                     <div className=' w-100 d-flex justify-content-center align-items-center pt-4'>
-                                        <span>Bayern Munich</span>
+                                        <span>Alemania</span>
                                     </div>
                                 </div>
                             </div>
@@ -39,10 +56,10 @@ const PortadaMenu = () => {
                             <div className='equiposMenu'>
                                 <div className='equipoNombre'>
                                     <div className='escudo'>
-                                        <img src="https://logodownload.org/wp-content/uploads/2017/02/Arsenal-logo-escudo-shield-1.png" alt="" />
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/62/Flag_of_France.png" alt="" />
                                     </div>
                                     <div className=' w-100 d-flex justify-content-center align-items-center pt-4'>
-                                        <span>Arsenal</span>
+                                        <span>Francia</span>
                                     </div>
                                 </div>
                             </div>
@@ -52,11 +69,11 @@ const PortadaMenu = () => {
                                 <div className='equipoNombre'>
                                     <div className='escudo'>
                                         <a href="">
-                                            <img src="https://th.bing.com/th/id/R.80f940efc74de2aa91de7ae9032dd080?rik=zvEeKregmzQOnA&pid=ImgRaw&r=0" alt="" />
+                                            <img src="https://logodownload.org/wp-content/uploads/2022/06/bandeira-argentina-flag.png" alt="" />
                                         </a>
                                     </div>
                                     <div className='w-100 d-flex justify-content-center align-items-center pt-4'>
-                                        <span>Benfica</span>
+                                        <span>Argentina</span>
                                     </div>
                                 </div>
                             </div>

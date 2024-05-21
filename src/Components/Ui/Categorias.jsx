@@ -2,50 +2,36 @@ import React from 'react';
 import "../../assets/style/Categorias.css";
 import ReactHtmlParser from 'html-react-parser';
 import parser from 'html-react-parser';
-const Categorias = ({ categoria, arrleloVideos }) => {
+const Categorias = ({ categoria, arrleloVideos ,nombre}) => {
 
     return (
         <div>
             <div className='d-flex justify-content-between mb-2'>
-                <h5> {categoria}</h5>
+                <h4> {nombre}</h4>
                 <span>ver todo</span>
             </div>
             <div>
                 <div className='row'>
                     {
-                        arrleloVideos.map((items) => (
-                            <div className='col-12 col-md-4 col-lg-4 my-3'>
-                                <div className='cardVideo'>
-                                    <div className='hearderCard'>
-                                       <img src={items.thumbnail} alt="" />
-                                    </div>
-                                    <div className='bodyCard container pt-3'>
-                                        <div className='d-flex justify-content-between align-items-center'>
-                                            <span>Lorem ipsum dolor .</span>
-                                            <span>Lorem .</span>
+                        arrleloVideos.filter((items) => items.competition === categoria).slice(0, 3)
+                        .map((items, index) => (
+                            <div className='col-12 col-md-4 col-lg-4 my-3' key={index}>
+                                <a href={items.matchviewUrl} className='text-decoration-none text-light'>
+                                    <div className='cardVideo'>
+                                        <div className='hearderCard'>
+                                            <img src={items.thumbnail} alt="" />
                                         </div>
-                                        <p>Lorem ipsum dolor sit amet</p>
-                                    </div>
-                                </div>
+                                        <div className='bodyCard container pt-3'>
+                                            <div className='text-secondary'>
+                                                <span>{items.competition}</span>
+                                            </div>
+                                            <span>{items.title}</span>
+                                        </div>
+                                    </div> 
+                                </a>
                             </div>
                         ))
                     }
-
-                    {/* <div className='col-12 col-md-4 col-lg-4'>
-                        <div className='cardVideo'>
-                            <div className='hearderCard'>
-                                <img src="https://www.elgoldigital.com/wp-content/uploads/los-200-goles-de-cristiano-ronaldo-con-el-real-madrid-video.jpg" alt="" />
-                            </div>
-                            <div className='bodyCard container pt-3'>
-                                <div className='d-flex justify-content-between align-items-center'>
-                                    <span>Lorem ipsum dolor .</span>
-                                    <span>Lorem .</span>
-                                </div>
-                                <p>Lorem ipsum dolor sit amet</p>
-                            </div>
-                        </div>
-                    </div> */}
-
                 </div>
 
             </div>

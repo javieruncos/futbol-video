@@ -4,6 +4,9 @@
     border-radius: 10px;
     overflow: hidden;
     background-color: #191919;
+    transition: 0.7s ease;
+  border: 1px solid transparent;
+
 }
 
 .hearderCard{
@@ -20,4 +23,17 @@
 .bodyCard{
     height: 25%;
     width: 100%;
+}
+
+.cardVideo:hover{
+  
+  border: 1px solid white;
+  
+}
+
+.cardVideo:hover img{
+  
+  scale: 1.05;
+  transition: 0.5s ease;
+  
 }

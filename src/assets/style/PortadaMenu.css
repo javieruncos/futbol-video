@@ -3,8 +3,40 @@
     width: 100%;
     background-color: #191919;
     border-radius: 10px;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
 }
 
+.portadaMenu img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.capa-portada{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.644);
+    position: absolute;
+    top: 0;
+}
+
+.container-img{
+    height: 300px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.capa-portada div img{
+    height: 350px;
+    width: 400px;
+    position: absolute;
+   
+}
 
 .MenuTorneos {
     height: 180px;
@@ -36,22 +68,22 @@
 }
 
 .escudo {
-    height: 70px;
-    width: 70px;
+    height: 80px;
+    width: 80px;
     border-radius: 50%;
     /* background: rgb(0, 0, 0);
     background: linear-gradient(32deg, rgba(0, 0, 0, 1) 44%, rgba(236, 235, 241, 1) 100%); */
     background-color: #28282a;
     position: absolute;
-    top: -30px;
+    top: -40px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .escudo img{
-    height:40px;
-    width: 40px;
+    height:30px;
+    width: 60px;
 }
 
 .escudo:hover{
