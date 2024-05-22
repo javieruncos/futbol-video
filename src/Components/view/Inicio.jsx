@@ -19,14 +19,16 @@ const Inicio = () => {
 
     return (
         <div className='mainInicio mt-4 container'>
-            <PortadaMenu></PortadaMenu>
-            <div className='mt-4'>
+            <div className='container'>
+                <PortadaMenu></PortadaMenu>
+            </div>
+            <div className='mt-4 container'>
                 <Categorias categoria={"ITALY: Serie A"} arrleloVideos={arrleloVideos} nombre={"Serie A"}></Categorias>
             </div>
-            <div className='mt-3'>
+            <div className='mt-3 container'>
                 <Categorias categoria={"ENGLAND: Premier League"} arrleloVideos={arrleloVideos} nombre={"Premier League"}></Categorias>
             </div>
-            <div className='mt-3'>
+            <div className='mt-3 container'>
                 <Categorias categoria={"SPAIN: La Liga"} arrleloVideos={arrleloVideos} nombre={"La Liga"}></Categorias>
             </div>
 
@@ -35,7 +37,7 @@ const Inicio = () => {
                     <span>logo</span>
                 </div>
             </div>
-            <div className='mt-3'>
+            <div className='mt-3 container'>
                 <Categorias categoria={"FRANCE: Ligue 1"} arrleloVideos={arrleloVideos} nombre={"Ligue 1"}></Categorias>
             </div>
 

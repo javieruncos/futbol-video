@@ -9,10 +9,10 @@ const PortadaMenu = () => {
                 <div className='capa-portada'>
                     <div className='row'>
                         <div className='col-12 col-md-6 col-lg-6'>
-                            <div className='container pt-4'>
+                            <div className='container pt-4 tituloPortada'>
                                 <h1 className='display-4 fw-bold'>Sport Resultados</h1>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, dignissimos!</p>
-                                <button className='btn btn-secondary w-25'>Ver todos</button>
+                                <button>Ver todos</button>
                             </div>
                         </div>
                         <div className='col-12 col-md-6 col-lg-6'>
@@ -25,10 +25,10 @@ const PortadaMenu = () => {
                   
                 </div>
             </div>
-            <div className='MenuTorneos'>
+            <div className='MenuTorneos container'>
                 <div className='container'>
                     <div className='row'>
-                        <div className='col-12 col-3 col-lg-3'>
+                        <div className='col-6 col-3 col-lg-3'>
                             <div className='equiposMenu'>
                                 <div className='equipoNombre'>
                                     <div className='escudo'>
@@ -40,7 +40,7 @@ const PortadaMenu = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className='col-12 col-3 col-lg-3'>
+                        <div className='col-6 col-3 col-lg-3'>
                             <div className='equiposMenu'>
                                 <div className='equipoNombre'>
                                     <div className='escudo'>
@@ -52,7 +52,7 @@ const PortadaMenu = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className='col-12 col-3 col-lg-3'>
+                        <div className='col-6 col-3 col-lg-3'>
                             <div className='equiposMenu'>
                                 <div className='equipoNombre'>
                                     <div className='escudo'>
@@ -64,7 +64,7 @@ const PortadaMenu = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className='col-12 col-3 col-lg-3'>
+                        <div className='col-6 col-3 col-lg-3'>
                             <div className='equiposMenu'>
                                 <div className='equipoNombre'>
                                     <div className='escudo'>

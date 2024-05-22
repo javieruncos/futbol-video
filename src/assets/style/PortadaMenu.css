@@ -1,4 +1,4 @@
-.portadaMenu{
+.portadaMenu {
     height: 300px;
     width: 100%;
     background-color: #191919;
@@ -8,13 +8,13 @@
     overflow: hidden;
 }
 
-.portadaMenu img{
+.portadaMenu img {
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
 
-.capa-portada{
+.capa-portada {
     height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.644);
@@ -22,7 +22,27 @@
     top: 0;
 }
 
-.container-img{
+.tituloPortada button{
+    padding: 10px 40px;
+    background-color: grey;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    border: 1px solid transparent;
+    transition: 0.4s ease;
+}
+
+.tituloPortada button:hover{
+    padding: 10px 40px;
+    background-color: #191919;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    border: 1px solid white;
+
+}
+
+.container-img {
     height: 300px;
     width: 100%;
     position: relative;
@@ -31,11 +51,14 @@
     justify-content: center;
 }
 
-.capa-portada div img{
+.MenuTorneos{
+    margin-top: 30px;
+}
+.capa-portada div img {
     height: 350px;
     width: 400px;
     position: absolute;
-   
+
 }
 
 .MenuTorneos {
@@ -43,7 +66,7 @@
     width: 100%;
     display: flex;
     align-items: center;
-  background-color: #151517;
+    background-color: #151517;
     padding-bottom: 10px;
     border-radius: 10px;
 }
@@ -71,8 +94,6 @@
     height: 80px;
     width: 80px;
     border-radius: 50%;
-    /* background: rgb(0, 0, 0);
-    background: linear-gradient(32deg, rgba(0, 0, 0, 1) 44%, rgba(236, 235, 241, 1) 100%); */
     background-color: #28282a;
     position: absolute;
     top: -40px;
@@ -81,12 +102,40 @@
     align-items: center;
 }
 
-.escudo img{
-    height:30px;
+.escudo img {
+    height: 30px;
     width: 60px;
 }
 
-.escudo:hover{
-   background-color:rgb(87, 86, 86);
+.escudo:hover {
+    background-color: rgb(87, 86, 86);
     transition: 0.5s ease;
+}
+
+
+@media screen and (max-width: 768px) {
+    .portadaMenu {
+        height: 486px;
+        width: 100%;
+    }
+
+    .tituloPortada {
+        text-align: center;
+        width: 94%;
+    }
+
+    .capa-portada div img {
+        height: 301px;
+        width: 347px;
+        position: absolute;
+    }
+
+    .MenuTorneos{
+        height: 340px;
+        margin-top: 20px;
+    }
+
+    .equiposMenu{
+        margin-top: 40px;
+    }
 }

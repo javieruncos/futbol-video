@@ -6,7 +6,7 @@ const MenuLateral = () => {
             <div className='container pt-3 mb-4'>
                 <div className='d-flex align-items-center gap-2 mb-3'>
                     <i className="bi bi-trophy-fill"></i>
-                    <span>torneos</span>
+                    <span className='fs-5'>torneos</span>
                 </div>
                 <div className='d-flex align-items-center gap-2 text-secondary'>
                     <div className='ligas'>
@@ -22,7 +22,7 @@ const MenuLateral = () => {
             <div className='container'>
                 <div className='d-flex align-items-center gap-2 mb-3'>
                     <i className="bi bi-fire"></i>
-                    <span>Destacados</span>
+                    <span className='fs-5'>Destacados</span>
                 </div>
                 <div className='ligas'>
                     <ul className='list-unstyled d-flex flex-column gap-3 text-secondary'>
