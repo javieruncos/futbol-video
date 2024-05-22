@@ -4,24 +4,22 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import Inicio from './Components/view/Inicio';
 import MenuLateral from './Components/common/MenuLateral';
+import Menu from './Components/common/Menu';
 
 function App() {
 
   return (
     <>
       <div className='App'>
-        <div className='row container-fluid'>
-          <div className='col-12 col-lg-2 col-lg-2'>
+        <BrowserRouter>
+          <Menu></Menu>
+          <div className='d-flex'>
             <MenuLateral></MenuLateral>
+            <Routes>
+              <Route path="/" element={<Inicio />} />
+            </Routes>
           </div>
-          <div className='col-12 col-lg-10 col-lg-10'>
-            <BrowserRouter>
-              <Routes>
-                <Route path="/" element={<Inicio />} />
-              </Routes>
-            </BrowserRouter>
-          </div>
-        </div>
+        </BrowserRouter>
       </div>
     </>
   )

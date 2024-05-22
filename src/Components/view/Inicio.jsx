@@ -18,9 +18,9 @@ const Inicio = () => {
 
 
     return (
-        <div className='mainInicio mt-4'>
+        <div className='mainInicio mt-4 container'>
             <PortadaMenu></PortadaMenu>
-            <div className='mt-3'>
+            <div className='mt-4'>
                 <Categorias categoria={"ITALY: Serie A"} arrleloVideos={arrleloVideos} nombre={"Serie A"}></Categorias>
             </div>
             <div className='mt-3'>
@@ -36,7 +36,7 @@ const Inicio = () => {
                 </div>
             </div>
             <div className='mt-3'>
-                <Categorias categoria={"ARGENTINA: Liga Profesional, Round 2"} arrleloVideos={arrleloVideos} nombre={"Liga Profesional"}></Categorias>
+                <Categorias categoria={"FRANCE: Ligue 1"} arrleloVideos={arrleloVideos} nombre={"Ligue 1"}></Categorias>
             </div>
 
         </div>
