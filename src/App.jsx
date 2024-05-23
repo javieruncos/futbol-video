@@ -6,6 +6,7 @@ import Inicio from './Components/view/Inicio';
 import MenuLateral from './Components/common/MenuLateral';
 import Menu from './Components/common/Menu';
 import DetallePartido from './Components/view/DetallePartido';
+import Ligas from './Components/view/Ligas';
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
             <Routes>
               <Route path="/" element={<Inicio />} />
               <Route path="/detalle/:id" element={<DetallePartido />} />
+              <Route path="/ligas/:liga" element={<Ligas />} />
             </Routes>
           </div>
         </BrowserRouter>

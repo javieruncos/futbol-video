@@ -11,7 +11,7 @@ const Menu = () => {
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
                             <Nav.Link href="/detalle">Home</Nav.Link>
-                            <Nav.Link href="#link">Link</Nav.Link>
+                            <Nav.Link href="/ligas/ENGLAND: Premier League">Link</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

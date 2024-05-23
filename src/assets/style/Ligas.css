@@ -1,0 +1,45 @@
+.portadaLigas {
+    height: 100px;
+    width: 100%;
+    background-color: #191919;
+    border-radius: 10px;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-top: 70px;
+}
+
+.portadaLigas img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.capa {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.788);
+    position: absolute;
+    top: 0;
+    display: flex;
+    gap: 30px;
+}
+
+.tituloLiga{
+    width: 50%;
+    height: 100%;
+    color: white;
+}
+
+.img-portada{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.img-portada img{
+    height: 300px;
+    width: 300px;
+}

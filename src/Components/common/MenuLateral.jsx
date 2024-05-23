@@ -1,5 +1,6 @@
 import React from 'react';
 import "../../assets/style/MenuLateral.css";
+import { Link } from 'react-router-dom';
 const MenuLateral = () => {
     return (
         <div className='menuLateral'>
@@ -11,8 +12,8 @@ const MenuLateral = () => {
                 <div className='d-flex align-items-center gap-2 text-secondary'>
                     <div className='ligas'>
                         <ul className='list-unstyled d-flex flex-column gap-3'>
-                            <li> <a href=""><i className="bi bi-trophy-fill me-2"></i>Premier League</a></li>
-                            <li><a href=""><i className="bi bi-trophy-fill me-2"></i>Serie A</a></li>
+                            <li> <Link to="/ligas/ENGLAND: Premier League"><i className="bi bi-trophy-fill me-2"></i>Premier League</Link></li>
+                            <li><Link to="/ligas/ITALY: Serie A"><i className="bi bi-trophy-fill me-2"></i>Serie A</Link></li>
                             <li> <a href=""><i className="bi bi-trophy-fill me-2"></i>La Liga</a></li>
                             <li> <a href=""><i className="bi bi-trophy-fill me-2"></i>Ligue 1</a></li>
                         </ul>
