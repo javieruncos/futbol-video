@@ -2,6 +2,7 @@ import React from 'react';
 import "../../assets/style/Categorias.css";
 import ReactHtmlParser from 'html-react-parser';
 import parser from 'html-react-parser';
+import { Link } from 'react-router-dom';
 const Categorias = ({ categoria, arrleloVideos ,nombre}) => {
 
     return (
@@ -16,7 +17,7 @@ const Categorias = ({ categoria, arrleloVideos ,nombre}) => {
                         arrleloVideos.filter((items) => items.competition === categoria).slice(0, 3)
                         .map((items, index) => (
                             <div className='col-12 col-md-4 col-lg-4 my-3' key={index}>
-                                <a href={items.matchviewUrl} className='text-decoration-none text-light'>
+                                <Link to={`/detalle/${items.videos[0].id}`} className='text-decoration-none text-light'>
                                     <div className='cardVideo'>
                                         <div className='hearderCard'>
                                             <img src={items.thumbnail} alt="" />
@@ -28,7 +29,7 @@ const Categorias = ({ categoria, arrleloVideos ,nombre}) => {
                                             <span>{items.title}</span>
                                         </div>
                                     </div> 
-                                </a>
+                                </Link>
                             </div>
                         ))
                     }
