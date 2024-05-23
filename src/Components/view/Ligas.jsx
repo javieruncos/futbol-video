@@ -21,7 +21,7 @@ const Ligas = () => {
         <div className='main container'>
            <PortadaLiga liga={liga}></PortadaLiga>
             <div className='mt-5'>
-                <h1>Todos los partidos</h1>
+                <h5>Todos los partidos</h5>
                 <div>
                     <div className='row'>
                         {

@@ -1,12 +1,28 @@
 import React from 'react';
 import halland from "../../assets/img/halland.png"
 import lautaro from "../../assets/img/lautaro.png"
+import logoPremier from "../../assets/img/logoPremier.png"
 
-const PortadaLiga = ({liga}) => {
+const PortadaLiga = ({ liga }) => {
+
+    const leagueNames = {
+        "ENGLAND: Premier League": "Premier League",
+        "ITALY: Serie A": "Serie A",
+        "SPAIN: La Liga": "La Liga",
+        "FRANCE: Ligue 1": "Ligue 1"
+    };
+
     return (
         <div className='portadaLigas'>
             <img src="https://images.alphacoders.com/510/510026.jpg" alt="" />
-           <h1>Premier League</h1>
+            <div className='capa container'>
+                <div className='logo-liga '>
+                    <span><i className="bi bi-trophy fs-1"></i></span>
+                </div>
+                <div>
+                    <h1>{leagueNames[liga]}</h1>
+                </div>
+            </div>
         </div>
     );
 };
