@@ -37,19 +37,21 @@ const DetallePartido = () => {
                         </div>
                     </div>
                     <div className='col-12 col-md-4 col-lg-4'>
-                        {
-                            arreglovideos.slice(0, 3).map((items, index) => (
-                                <div className=' cardSugerencia mb-3'>
-                                    <div className='img-card'>
-                                        <img src={items.thumbnail} alt="" />
+                        <div className='containerCard-sugerencia'>
+                            {
+                                arreglovideos.slice(0, 3).map((items, index) => (
+                                    <div className=' cardSugerencia mb-3'>
+                                        <div className='img-card'>
+                                            <img src={items.thumbnail} alt="" />
+                                        </div>
+                                        <div className='container py-2'>
+                                            <span className='text-secondary'>{items.competition}</span>
+                                            <p>{items.title}</p>
+                                        </div>
                                     </div>
-                                    <div className='container py-2'>
-                                        <span className='text-secondary'>{items.competition}</span>
-                                        <p>{items.title}</p>
-                                    </div>
-                                </div>
-                            ))
-                        }
+                                ))
+                            }
+                        </div>
                     </div>
                 </div>
             </div>
@@ -69,6 +71,6 @@ const DetallePartido = () => {
             </div>
         </div>
     );
-}; 
+};
 
 export default DetallePartido;

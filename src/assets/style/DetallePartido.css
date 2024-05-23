@@ -4,6 +4,8 @@
     margin-top: 70px;
 }
 
+
+
 .cardSugerencia{
     height: 100px;
     width: 100%;
@@ -22,4 +24,21 @@
 .cardSugerencia img{
     height: 100%;
     width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+
+    .detalle-container{
+        height: 420px;
+        width: 100%;
+        margin-top: 70px;
+        margin-bottom: 200px;
+    }
+
+
+    .containerCard-sugerencia{
+        height: 350px;
+        margin-top: 30px;
+    }
+    
 }
