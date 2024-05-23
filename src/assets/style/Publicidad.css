@@ -1,0 +1,36 @@
+.publicidad{
+    height: 300px;
+   position: relative;
+   overflow: hidden;
+   border-radius: 10px;
+}
+
+
+.container-liga{
+  display: flex;
+}
+
+
+.tituloPublicidad{
+    height: 400px;
+    width: 100%;
+    background-color: #191919;
+}
+
+.buttonPublicidad{
+   padding: 10px 100px;
+   border: 1px solid transparent;
+   background-color: blueviolet;
+   color: white;
+}
+
+.column-img{
+    height: 400px;
+    width: 100%;
+    background-color: aqua;
+}
+
+.column-img img{
+    height: 100%;
+    width: 100%;
+}

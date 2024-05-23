@@ -1,6 +1,25 @@
 .detalle-container{
-    height: 500px;
+    height: 420px;
     width: 100%;
-    background-color: red;
     margin-top: 70px;
+}
+
+.cardSugerencia{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    font-size: 14px;
+    background-color: #191919;
+    border-radius: 10px;
+
+}
+
+.img-card{
+    height: 100px;
+    width: 240px;
+}
+
+.cardSugerencia img{
+    height: 100%;
+    width: 100%;
 }

@@ -17,7 +17,7 @@ const Categorias = ({ categoria, arrleloVideos ,nombre}) => {
                         arrleloVideos.filter((items) => items.competition === categoria).slice(0, 3)
                         .map((items, index) => (
                             <div className='col-12 col-md-4 col-lg-4 my-3' key={index}>
-                                <Link to={`/detalle/${items.videos[0].id}`} className='text-decoration-none text-light'>
+                                <a href={`/detalle/${items.videos[0].id}`} className='text-decoration-none text-light'>
                                     <div className='cardVideo'>
                                         <div className='hearderCard'>
                                             <img src={items.thumbnail} alt="" />
@@ -29,7 +29,7 @@ const Categorias = ({ categoria, arrleloVideos ,nombre}) => {
                                             <span>{items.title}</span>
                                         </div>
                                     </div> 
-                                </Link>
+                                </a>
                             </div>
                         ))
                     }
