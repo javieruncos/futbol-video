@@ -16,22 +16,10 @@ const MenuLateral = () => {
                             <li><Link to="/ligas/ITALY: Serie A">Serie A</Link></li>
                             <li> <Link to="/ligas/SPAIN: La Liga">La Liga</Link></li>
                             <li> <Link to="/ligas/FRANCE: Ligue 1">Ligue 1</Link></li>
+                            <li> <Link to="/ligas/GERMANY: Bundesliga">Bundesliga</Link></li>
+                            <li> <Link to="/ligas/todos">todos</Link></li>
                         </ul>
                     </div>
-                </div>
-            </div>
-            <div className='container'>
-                <div className='d-flex align-items-center gap-2 mb-3'>
-                    <i className="bi bi-fire"></i>
-                    <span className='fs-5'>Destacados</span>
-                </div>
-                <div className='ligas'>
-                    <ul className='list-unstyled d-flex flex-column gap-3 text-secondary'>
-                        <li><a href="">Real Madrid</a></li>
-                        <li><a href="">Bayern Munich</a></li>
-                        <li><a href="">Manchester City</a></li>
-                        <li><a href="">PSG</a></li>
-                    </ul>
                 </div>
             </div>
         </div>

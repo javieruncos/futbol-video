@@ -1,3 +1,32 @@
+.customNav{
+    height: 60px;
+    width: 100%;
+    background-color: #191919;
+    color: white;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    display: flex;
+}
+
+.containerLinks{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logoMenu{
+    height: 100%;
+    width: 235px;
+    display: flex;
+    align-items: center;
+}
+
+
+
+
 .navbar{
     width: 100%;
     background-color: #191919;
@@ -5,4 +34,42 @@
     position: fixed;
     top: 0;
     z-index: 999;
+    display: none;
+}
+
+.ligasMenu{
+    display: none;
+}
+
+Container{
+    background-color: red;
+}
+
+@media screen and (max-width: 768px) {
+
+
+    .customNav{
+        display: none;
+    }
+
+
+    .navbar{
+        display: block;
+    }
+
+    .ligasMenu{
+        display:block;
+        color: #191919;
+    }
+
+    .ligasMenu a {
+        text-decoration: none;
+        color: grey;
+    }
+    
+    .ligasMenu a:hover{
+        color: white;
+        transition: 0.5s ease;
+    }
+    
 }

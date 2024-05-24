@@ -5,6 +5,7 @@ import { useParams } from 'react-router-dom';
 
 import PortadaLiga from '../Ui/PortadaLiga';
 import Publicidad from '../Ui/Publicidad';
+import Categorias from '../Ui/Categorias';
 
 const Ligas = () => {
     const { liga } = useParams()
@@ -19,7 +20,7 @@ const Ligas = () => {
 
     return (
         <div className='main container'>
-           <PortadaLiga liga={liga}></PortadaLiga>
+            <PortadaLiga liga={liga}></PortadaLiga>
             <div className='mt-5'>
                 <h5>Todos los partidos</h5>
                 <div>
@@ -43,7 +44,6 @@ const Ligas = () => {
                                 </div>
                             ))
                         }
-
                     </div>
                 </div>
             </div>
