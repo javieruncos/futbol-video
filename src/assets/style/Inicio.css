@@ -3,9 +3,8 @@
 } */
 
 .separador{
-    height: 80px;
+    height: 100px;
     width: 100%;
-    background-color: aqua;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,4 +24,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.separador div img{
+    height: 40px;
+    width: 60px;
 }

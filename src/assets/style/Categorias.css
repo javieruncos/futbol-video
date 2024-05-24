@@ -1,39 +1,38 @@
-.cardVideo{
-    height: 330px;
-    width: 100%;
-    border-radius: 10px;
-    overflow: hidden;
-    background-color: #191919;
-    transition: 0.7s ease;
+.cardVideo {
+  height: 330px;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #191919;
+  transition: 0.7s ease;
   border: 1px solid transparent;
 
 }
 
-.hearderCard{
-    height: 70%;
-    width: 100%;
-    background-color: red;
+.hearderCard {
+  height: 70%;
+  width: 100%;
 }
 
-.hearderCard img{
-    height: 100%;
-    width: 100%;
+.hearderCard img {
+  height: 100%;
+  width: 100%;
 }
 
-.bodyCard{
-    height: 25%;
-    width: 100%;
+.bodyCard {
+  height: 25%;
+  width: 100%;
 }
 
-.cardVideo:hover{
-  
+.cardVideo:hover {
+
   border: 1px solid white;
-  
+
 }
 
-.cardVideo:hover img{
-  
+.cardVideo:hover img {
+
   scale: 1.05;
   transition: 0.5s ease;
-  
+
 }

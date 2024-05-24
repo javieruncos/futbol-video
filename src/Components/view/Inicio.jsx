@@ -4,6 +4,7 @@ import "../../assets/style/Inicio.css";
 import PortadaMenu from '../Ui/PortadaMenu';
 import Categorias from '../Ui/Categorias';
 import { getVideos } from '../../helpers/App';
+import logo from "../../assets/img/logo-futbol.png"
 const Inicio = () => {
     const [arrleloVideos, setArrleloVideos] = useState([])
 
@@ -34,7 +35,7 @@ const Inicio = () => {
 
             <div className='separador my-5'>
                 <div>
-                    <span>logo</span>
+                  <h3>Resumenes de las mejores ligas</h3>
                 </div>
             </div>
             <div className='mt-3 container'>

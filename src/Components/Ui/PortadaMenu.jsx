@@ -11,8 +11,10 @@ const PortadaMenu = () => {
                     <div className='row'>
                         <div className='col-12 col-md-6 col-lg-6'>
                             <div className='container pt-4 tituloPortada'>
-                                <h1 className='display-4 fw-bold'>Sport Resultados</h1>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, dignissimos!</p>
+                                <h1 className='display-1 fw-bold'>Sport Resultados</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Commodi cupiditate voluptates autem minima aut delectus?
+                                </p>
                                 <div className='mt-4'>
                                     <a href='/ligas/Todos'>Ver todos</a>
                                 </div>

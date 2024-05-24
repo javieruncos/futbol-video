@@ -46,9 +46,7 @@
     display: none;
 }
 
-Container{
-    background-color: red;
-}
+
 
 @media screen and (max-width: 768px) {
 
