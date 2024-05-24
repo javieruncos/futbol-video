@@ -3,8 +3,10 @@ import { useState } from 'react';
 import "../../assets/style/Inicio.css";
 import PortadaMenu from '../Ui/PortadaMenu';
 import Categorias from '../Ui/Categorias';
+import Publicidad from '../Ui/Publicidad';
 import { getVideos } from '../../helpers/App';
 import logo from "../../assets/img/logo-futbol.png"
+import Footer from '../common/Footer';
 const Inicio = () => {
     const [arrleloVideos, setArrleloVideos] = useState([])
 
@@ -20,7 +22,7 @@ const Inicio = () => {
 
     return (
         <div className='mainInicio mt-4 container'>
-            <div className='container'>
+            <div className='container pt-3'>
                 <PortadaMenu></PortadaMenu>
             </div>
             <div className='mt-4 container'>
@@ -41,7 +43,12 @@ const Inicio = () => {
             <div className='mt-3 container'>
                 <Categorias categoria={"FRANCE: Ligue 1"} arrleloVideos={arrleloVideos} nombre={"Ligue 1"}></Categorias>
             </div>
-
+            <div>
+                <Publicidad></Publicidad>
+            </div>
+            <div className='mt-5 mb-3'>
+                <Footer></Footer>
+            </div>
         </div>
     );
 };

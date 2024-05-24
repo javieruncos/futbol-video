@@ -24,6 +24,10 @@
     top: 0;
 }
 
+.tituloPortada{
+    padding-left: 40px;
+}
+
 .tituloPortada a{
     padding: 10px 40px;
     background-color: grey;
@@ -49,7 +53,6 @@
     height: 300px;
     width: 100%;
     position: relative;
-    overflow: hidden;
     display: flex;
     justify-content: center;
 }
@@ -130,20 +133,26 @@
 
 @media screen and (max-width: 768px) {
     .portadaMenu {
-        height: 486px;
+        height: 484px;
         width: 100%;
     }
 
     .tituloPortada {
         text-align: center;
         width: 94%;
+        padding-left: 0;
+    }
+
+    .container-img{
+        display: flex;
+        align-items: end;
     }
 
     .capa-portada div img {
-        height: 301px;
-        width: 347px;
-        position: absolute;
+        height: 250px;
+        width: 289px;
     }
+
 
     .MenuTorneos{
         height: 340px;

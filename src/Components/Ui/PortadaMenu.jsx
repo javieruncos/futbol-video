@@ -7,7 +7,7 @@ const PortadaMenu = () => {
         <>
             <div className='portadaMenu mt-5'>
                 <img src="https://images.alphacoders.com/510/510026.jpg" alt="" />
-                <div className='capa-portada ps-4'>
+                <div className='capa-portada'>
                     <div className='row'>
                         <div className='col-12 col-md-6 col-lg-6'>
                             <div className='container pt-4 tituloPortada'>
@@ -25,9 +25,7 @@ const PortadaMenu = () => {
                                 <img src={jugadores} alt="jugadores real madrid" />
                             </div>
                         </div>
-
                     </div>
-
                 </div>
             </div>
             <div className='MenuTorneos container'>

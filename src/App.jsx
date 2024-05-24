@@ -7,6 +7,7 @@ import MenuLateral from './Components/common/MenuLateral';
 import Menu from './Components/common/Menu';
 import DetallePartido from './Components/view/DetallePartido';
 import Ligas from './Components/view/Ligas';
+import Footer from './Components/common/Footer';
 
 function App() {
 

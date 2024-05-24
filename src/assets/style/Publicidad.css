@@ -19,10 +19,17 @@
 }
 
 .buttonPublicidad {
-    padding: 10px 100px;
+    padding: 10px 50px;
     border: 1px solid transparent;
-    background-color: blueviolet;
+    background-color: grey;
     color: white;
+}
+
+.buttonPublicidad:hover {
+    background-color: #191919;
+    color: white;
+    transition: 0.5s ease;
+    border: 1px solid white;
 }
 
 .column-img {

@@ -8,13 +8,13 @@ const Menu = () => {
         <>
             <div className='customNav'>
                 <div className='logoMenu container ps-4 d-flex gap-2'>
-                   <img src={logo} alt="" />
-                   <span>futbol video</span>
+                    <span><i className="bi bi-caret-left-square-fill text-danger fs-4"></i></span>
+                    <span className='fs-4'>futbol video</span>
                 </div>
                 <div className='containerLinks px-4'>
                     <div className='ps-2 d-flex gap-3'>
-                        <Link to={"/"} className='text-decoration-none text-light'>Inicio</Link>
-                        <Link to={"/ligas/Todos"} className='text-decoration-none text-light'>Resultados</Link>
+                        <Link to={"/"} className='text-decoration-none text-light fs-4'>Inicio</Link>
+                        <Link to={"/ligas/Todos"} className='text-decoration-none text-light fs-4'>Resumenes</Link>
                     </div>
                     <div className='d-flex gap-3 pe-2'>
                         <Link to={"/"} className='text-decoration-none text-light'>
@@ -32,7 +32,10 @@ const Menu = () => {
             <Navbar expand="lg" className="navbar-dark">
                 <Container>
                     <Navbar.Brand href="/">
-                        <img src={logo} alt="" className='logo' />
+                        <div className='logoMenu container d-flex gap-2'>
+                            <span><i className="bi bi-caret-left-square-fill text-danger fs-4"></i></span>
+                            <span className='fs-4'>futbol video</span>
+                        </div>
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
