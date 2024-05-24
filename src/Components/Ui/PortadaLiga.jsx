@@ -9,7 +9,8 @@ const PortadaLiga = ({ liga }) => {
         "ENGLAND: Premier League": "Premier League",
         "ITALY: Serie A": "Serie A",
         "SPAIN: La Liga": "La Liga",
-        "FRANCE: Ligue 1": "Ligue 1"
+        "FRANCE: Ligue 1": "Ligue 1",
+        "Todos":"Todos los resultados"
     };
 
     return (

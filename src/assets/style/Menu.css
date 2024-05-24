@@ -24,6 +24,11 @@
     align-items: center;
 }
 
+.logoMenu img{
+    height: 30px;
+    width: 60px;
+}
+
 
 
 
@@ -71,5 +76,11 @@ Container{
         color: white;
         transition: 0.5s ease;
     }
+
+    .logo{
+        height: 30px;
+        width: 60px;
+    }
+    
     
 }

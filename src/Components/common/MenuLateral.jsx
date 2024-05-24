@@ -17,7 +17,6 @@ const MenuLateral = () => {
                             <li> <Link to="/ligas/SPAIN: La Liga">La Liga</Link></li>
                             <li> <Link to="/ligas/FRANCE: Ligue 1">Ligue 1</Link></li>
                             <li> <Link to="/ligas/GERMANY: Bundesliga">Bundesliga</Link></li>
-                            <li> <Link to="/ligas/todos">todos</Link></li>
                         </ul>
                     </div>
                 </div>

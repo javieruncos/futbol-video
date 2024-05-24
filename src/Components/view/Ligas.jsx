@@ -2,10 +2,8 @@ import React, { useEffect, useState } from 'react';
 import "../../assets/style/Ligas.css";
 import { getVideos } from '../../helpers/App';
 import { useParams } from 'react-router-dom';
-
 import PortadaLiga from '../Ui/PortadaLiga';
-import Publicidad from '../Ui/Publicidad';
-import Categorias from '../Ui/Categorias';
+
 
 const Ligas = () => {
     const { liga } = useParams()
@@ -26,6 +24,24 @@ const Ligas = () => {
                 <div>
                     <div className='row'>
                         {
+
+                            liga === "Todos" ? arregloLigas.map((items, index) => (
+                                <div className='col-12 col-md-4 col-lg-4 my-3' key={index}>
+                                <a href={`/detalle/${items.videos[0].id}`} className='text-decoration-none text-light'>
+                                    <div className='cardVideo'>
+                                        <div className='hearderCard'>
+                                            <img src={items.thumbnail} alt="" />
+                                        </div>
+                                        <div className='bodyCard container pt-3'>
+                                            <div className='text-secondary'>
+                                                <span>{items.competition}</span>
+                                            </div>
+                                            <span>{items.title}</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            )):
                             arregloLigas.filter((items) => items.competition === liga).map((items, index) => (
                                 <div className='col-12 col-md-4 col-lg-4 my-3' key={index}>
                                     <a href={`/detalle/${items.videos[0].id}`} className='text-decoration-none text-light'>

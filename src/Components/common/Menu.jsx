@@ -2,16 +2,19 @@ import React from 'react';
 import "../../assets/style/Menu.css";
 import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import logo from "../../assets/img/logo-futbol.png"
 const Menu = () => {
     return (
         <>
             <div className='customNav'>
-                <div className='logoMenu container ps-4'>
-                    logo
+                <div className='logoMenu container ps-4 d-flex gap-2'>
+                   <img src={logo} alt="" />
+                   <span>futbol video</span>
                 </div>
                 <div className='containerLinks px-4'>
-                    <div className='ps-2'>
+                    <div className='ps-2 d-flex gap-3'>
                         <Link to={"/"} className='text-decoration-none text-light'>Inicio</Link>
+                        <Link to={"/ligas/Todos"} className='text-decoration-none text-light'>Resultados</Link>
                     </div>
                     <div className='d-flex gap-3 pe-2'>
                         <Link to={"/"} className='text-decoration-none text-light'>
@@ -28,7 +31,9 @@ const Menu = () => {
 
             <Navbar expand="lg" className="navbar-dark">
                 <Container>
-                    <Navbar.Brand href="/">React-Bootstrap</Navbar.Brand>
+                    <Navbar.Brand href="/">
+                        <img src={logo} alt="" className='logo' />
+                    </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
