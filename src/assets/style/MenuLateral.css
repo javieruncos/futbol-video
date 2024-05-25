@@ -8,9 +8,10 @@
 }
 
 .ligas{
-   
+    width: 100%;
     display: flex;
     flex-direction: column;
+    gap: 10px;
 }
 
 .ligas a {
@@ -21,6 +22,20 @@
 .ligas a:hover{
     color: white;
     transition: 0.5s ease;
+}
+
+.containerLogo{
+    height: 50px;
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.containerLogo img{
+  height: 40px;
+  width: 40px;
 }
 
 @media screen and (max-width: 768px) {

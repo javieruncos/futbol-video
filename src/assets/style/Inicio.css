@@ -1,6 +1,3 @@
-/* .mainInicio{
-    background-color: red;
-} */
 
 .separador{
     height: 100px;
@@ -9,7 +6,7 @@
     justify-content: center;
     align-items: center;
     border-radius: 5px;
-    background-image: url("https://png.pngtree.com/background/20230525/original/pngtree-soccer-stadium-with-lights-at-night-picture-image_2729290.jpg");
+    background-image: url("../img/futbol-2.jpg");
     background-position: center;
     background-size: cover;
     position: relative;
@@ -18,11 +15,12 @@
 .separador div{
     height: 100%;
     width: 100%;
-    background-color: rgba(24, 24, 24, 0.664);
+    background-color: rgba(0, 0, 0, 0.774);
     position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
+    backdrop-filter: blur(2px);
 }
 
 .separador div img{

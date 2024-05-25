@@ -43,6 +43,9 @@ const Inicio = () => {
             <div className='mt-3 container'>
                 <Categorias categoria={"FRANCE: Ligue 1"} arrleloVideos={arrleloVideos} nombre={"Ligue 1"}></Categorias>
             </div>
+            <div className='mt-3 container'>
+                <Categorias categoria={"GERMANY: Bundesliga"} arrleloVideos={arrleloVideos} nombre={"Bundesliga"}></Categorias>
+            </div>
             <div>
                 <Publicidad></Publicidad>
             </div>
