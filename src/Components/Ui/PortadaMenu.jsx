@@ -32,7 +32,7 @@ const PortadaMenu = () => {
                 <div className='container'>
                     <div className='row'>
                         <div className='col-6 col-3 col-lg-3'>
-                            <Link to="">
+                            <Link to="/ligas/ENGLAND: Premier League">
                                 <div className='equiposMenu'>
                                     <div className='equipoNombre'>
                                         <div className='escudo'>
@@ -46,21 +46,21 @@ const PortadaMenu = () => {
                             </Link>
                         </div>
                         <div className='col-6 col-3 col-lg-3'>
-                            <Link to="">
+                            <Link to="/ligas/ITALY: Serie A">
                                 <div className='equiposMenu'>
                                     <div className='equipoNombre'>
                                         <div className='escudo'>
-                                            <img src="https://flagcdn.com/w2560/de.png" alt="" />
+                                            <img src="https://static.vecteezy.com/system/resources/previews/011/017/088/original/italian-flag-of-italy-png.png" alt="" />
                                         </div>
                                         <div className=' w-100 d-flex justify-content-center align-items-center pt-4'>
-                                            <span>Alemania</span>
+                                            <span>Italia</span>
                                         </div>
                                     </div>
                                 </div>
                             </Link>
                         </div>
                         <div className='col-6 col-3 col-lg-3'>
-                            <Link to="">
+                            <Link to="/ligas/FRANCE: Ligue 1">
                                 <div className='equiposMenu'>
                                     <div className='equipoNombre'>
                                         <div className='escudo'>
@@ -74,16 +74,16 @@ const PortadaMenu = () => {
                             </Link>
                         </div>
                         <div className='col-6 col-3 col-lg-3'>
-                            <Link to="">
+                            <Link to="/ligas/SPAIN: La Liga">
                                 <div className='equiposMenu'>
                                     <div className='equipoNombre'>
                                         <div className='escudo'>
                                             <a href="">
-                                                <img src="https://logodownload.org/wp-content/uploads/2022/06/bandeira-argentina-flag.png" alt="" />
+                                                <img src="https://th.bing.com/th/id/OIP.Hupo_5BQugE89VTqT29_oQHaE7?rs=1&pid=ImgDetMain" alt="" />
                                             </a>
                                         </div>
                                         <div className='w-100 d-flex justify-content-center align-items-center pt-4'>
-                                            <span>Argentina</span>
+                                            <span>España</span>
                                         </div>
                                     </div>
                                 </div>

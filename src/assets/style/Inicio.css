@@ -9,7 +9,7 @@
     justify-content: center;
     align-items: center;
     border-radius: 5px;
-    background-image: url("https://th.bing.com/th/id/R.19d67221b6e33050e375befa315321e8?rik=cyHfg8kJyFfgTQ&riu=http%3a%2f%2fwww.soccerbible.cn%2fuploadfile%2f2019%2f0710%2f20190710102714900.jpg&ehk=lTqYlEN45VK4iDrrnxafXg0o27Ndbp5qy2cuZykcRJM%3d&risl=&pid=ImgRaw&r=0");
+    background-image: url("https://png.pngtree.com/background/20230525/original/pngtree-soccer-stadium-with-lights-at-night-picture-image_2729290.jpg");
     background-position: center;
     background-size: cover;
     position: relative;
@@ -18,9 +18,8 @@
 .separador div{
     height: 100%;
     width: 100%;
-    background-color: rgba(24, 24, 24, 0.548);
+    background-color: rgba(24, 24, 24, 0.664);
     position: absolute;
-    backdrop-filter: blur(4px);
     display: flex;
     justify-content: center;
     align-items: center;

@@ -17,11 +17,9 @@ const PortadaLiga = ({ liga }) => {
         <div className='portadaLigas'>
             <img src="https://images.alphacoders.com/510/510026.jpg" alt="" />
             <div className='capa container'>
-                <div className='logo-liga '>
-                    <span><i className="bi bi-trophy fs-1"></i></span>
-                </div>
-                <div>
-                    <h1>{leagueNames[liga]}</h1>
+                <div className='logo-liga'>
+                    <span><i className="bi bi-trophy fs-2 "></i></span>
+                    <h1 className='pt-2'>{leagueNames[liga]}</h1>
                 </div>
             </div>
         </div>

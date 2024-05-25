@@ -17,6 +17,15 @@
     align-items: center;
 }
 
+.links{
+    text-decoration: none;
+    color: white;
+}
+
+.links:hover{
+    color: grey;
+}
+
 .logoMenu{
     height: 100%;
     width: 235px;

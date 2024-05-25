@@ -13,8 +13,8 @@ const Menu = () => {
                 </div>
                 <div className='containerLinks px-4'>
                     <div className='ps-2 d-flex gap-3'>
-                        <Link to={"/"} className='text-decoration-none text-light fs-4'>Inicio</Link>
-                        <Link to={"/ligas/Todos"} className='text-decoration-none text-light fs-4'>Resumenes</Link>
+                        <Link to={"/"} className=' fs-4 links'>Inicio</Link>
+                        <Link to={"/ligas/Todos"} className='fs-4 links'>Resumenes</Link>
                     </div>
                     <div className='d-flex gap-3 pe-2'>
                         <Link to={"/"} className='text-decoration-none text-light'>
@@ -25,10 +25,7 @@ const Menu = () => {
                         </Link>
                     </div>
                 </div>
-
             </div>
-
-
             <Navbar expand="lg" className="navbar-dark">
                 <Container>
                     <Navbar.Brand href="/">
@@ -40,8 +37,8 @@ const Menu = () => {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
-                            <Nav.Link href="/detalle">Home</Nav.Link>
-                            <Nav.Link href="/ligas/ENGLAND: Premier League">Link</Nav.Link>
+                            <Nav.Link href="/detalle">Inicio</Nav.Link>
+                            <Nav.Link href="/ligas/ENGLAND: Premier League">Resumenes</Nav.Link>
                             <div className='ligasMenu'>
                                 <ul className='list-unstyled d-flex flex-column gap-3'>
                                     <li> <Link to="/ligas/ENGLAND: Premier League">Premier League</Link></li>

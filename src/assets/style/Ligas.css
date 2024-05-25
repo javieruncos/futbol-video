@@ -7,7 +7,7 @@
     border-radius: 20px;
     overflow: hidden;
     margin-top: 70px;
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(1px);
 }
 
 .portadaLigas img {
@@ -31,11 +31,10 @@
 
 .logo-liga{
     height: 70px;
-    width: 70px;
+    width: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
-    overflow: hidden;
+    gap: 10px;
 }
 
 .logo-liga img{
@@ -43,5 +42,17 @@
     width: 70px;
 }
 
+
+@media  screen and (max-width: 768px) {
+    .logo-liga{
+        height: 70px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        gap: 10px;
+    }
+}
 
 

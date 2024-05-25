@@ -57,7 +57,7 @@ const DetallePartido = () => {
             </div>
             <div className='separador my-5'>
                 <div>
-                    <span>logo</span>
+                    <h3>Resumenes de las mejores ligas</h3>
                 </div>
             </div>
             <div>
