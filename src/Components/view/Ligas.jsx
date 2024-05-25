@@ -5,6 +5,7 @@ import { useParams } from 'react-router-dom';
 import PortadaLiga from '../Ui/PortadaLiga';
 import Footer from '../common/Footer';
 import Sponsors from './Sponsors';
+import Sugerencia from '../Ui/Sugerencia';
 
 
 
@@ -41,7 +42,7 @@ const Ligas = () => {
                                                 <div className='text-secondary'>
                                                     <span>{items.competition}</span>
                                                 </div>
-                                                <span>{items.title}</span>
+                                                <span className='fs-4'>{items.title}</span>
                                             </div>
                                         </div>
                                     </a>
@@ -69,6 +70,9 @@ const Ligas = () => {
                 </div>
                 <div className='my-5'>
                     <Sponsors></Sponsors>
+                </div>
+                <div>
+                    <Sugerencia arreglovideos={arregloLigas}></Sugerencia>
                 </div>
                 <div className='mt-5 mb-3'>
                     <Footer></Footer>

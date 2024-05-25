@@ -37,7 +37,7 @@ const Menu = () => {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
-                            <Nav.Link href="/detalle">Inicio</Nav.Link>
+                            <Nav.Link href="/">Inicio</Nav.Link>
                             <Nav.Link href="/ligas/ENGLAND: Premier League">Resumenes</Nav.Link>
                             <div className='ligasMenu'>
                                 <ul className='list-unstyled d-flex flex-column gap-3'>

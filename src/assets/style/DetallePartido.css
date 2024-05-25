@@ -2,9 +2,8 @@
     height: 420px;
     width: 100%;
     margin-top: 85px;
+    overflow: hidden;
 }
-
-
 
 .cardSugerencia{
     height: 100px;
@@ -13,18 +12,29 @@
     font-size: 14px;
     background-color: #191919;
     border-radius: 10px;
+    overflow: hidden;
 
 }
+
 
 .img-card{
     height: 100px;
     width: 240px;
+    overflow: hidden;
+
 }
 
 .cardSugerencia img{
     height: 100%;
     width: 100%;
 }
+
+.cardSugerencia:hover img{
+    scale: 1.05;
+    transition: 1s ease;
+}
+
+
 
 @media screen and (max-width: 768px) {
 

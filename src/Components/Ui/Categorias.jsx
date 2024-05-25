@@ -1,5 +1,5 @@
 import React from 'react';
-import "../../assets/style/Categorias.css";
+import "../../assets/style/CardVideos.css";
 import ReactHtmlParser from 'html-react-parser';
 import parser from 'html-react-parser';
 import { Link } from 'react-router-dom';
@@ -9,7 +9,7 @@ const Categorias = ({ categoria, arrleloVideos ,nombre}) => {
         <div>
             <div className='d-flex justify-content-between mb-2'>
                 <h4> {nombre}</h4>
-                <span>ver todo</span>
+                <Link to={`/ligas/${categoria}`} className='text-decoration-none text-light'>ver todo</Link>
             </div>
             <div>
                 <div className='row'>
@@ -26,7 +26,7 @@ const Categorias = ({ categoria, arrleloVideos ,nombre}) => {
                                             <div className='text-secondary'>
                                                 <span>{items.competition}</span>
                                             </div>
-                                            <span>{items.title}</span>
+                                            <span className='fs-5'>{items.title}</span>
                                         </div>
                                     </div> 
                                 </a>
@@ -34,7 +34,6 @@ const Categorias = ({ categoria, arrleloVideos ,nombre}) => {
                         ))
                     }
                 </div>
-
             </div>
         </div>
     );

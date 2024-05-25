@@ -6,6 +6,9 @@ import { getVideos } from '../../helpers/App';
 import Video from '../Ui/Video';
 import Categorias from '../Ui/Categorias';
 import Publicidad from '../Ui/Publicidad';
+import Sugerencia from '../Ui/Sugerencia';
+import Footer from '../common/Footer';
+import Sponsors from './Sponsors';
 
 const DetallePartido = () => {
     const [video, setVideo] = useState({})
@@ -40,15 +43,17 @@ const DetallePartido = () => {
                         <div className='containerCard-sugerencia'>
                             {
                                 arreglovideos.slice(0, 3).map((items, index) => (
-                                    <div className=' cardSugerencia mb-3'>
-                                        <div className='img-card'>
-                                            <img src={items.thumbnail} alt="" />
+                                    <a href={`/detalle/${items.videos[0].id}`} className='text-decoration-none text-light'>
+                                        <div className=' cardSugerencia mb-3'>
+                                            <div className='img-card'>
+                                                <img src={items.thumbnail} alt="" />
+                                            </div>
+                                            <div className='container py-2'>
+                                                <span className='text-secondary'>{items.competition}</span>
+                                                <p className='fs-6'>{items.title}</p>
+                                            </div>
                                         </div>
-                                        <div className='container py-2'>
-                                            <span className='text-secondary'>{items.competition}</span>
-                                            <p>{items.title}</p>
-                                        </div>
-                                    </div>
+                                    </a>
                                 ))
                             }
                         </div>
@@ -63,11 +68,20 @@ const DetallePartido = () => {
             <div>
                 <Categorias categoria={"ENGLAND: Premier League"} arrleloVideos={arreglovideos} nombre={"Premier League"}></Categorias>
             </div>
-            <div>
+            <div className='my-4'>
                 <Categorias categoria={"SPAIN: La Liga"} arrleloVideos={arreglovideos} nombre={"La Liga"}></Categorias>
             </div>
             <div className='mt-5'>
                 <Publicidad></Publicidad>
+            </div>
+            <div className='my-5'>
+                <Sugerencia arreglovideos={arreglovideos}></Sugerencia>
+            </div>
+            <div>
+                <Sponsors></Sponsors>
+            </div>
+            <div className='mt-5 mb-3'>
+                <Footer></Footer>
             </div>
         </div>
     );
