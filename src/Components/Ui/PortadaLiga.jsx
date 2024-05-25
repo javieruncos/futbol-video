@@ -10,6 +10,7 @@ const PortadaLiga = ({ liga }) => {
         "ITALY: Serie A": "Serie A",
         "SPAIN: La Liga": "La Liga",
         "FRANCE: Ligue 1": "Ligue 1",
+        "GERMANY: Bundesliga": "Bundesliga",
         "Todos":"Todos los resultados"
     };
 

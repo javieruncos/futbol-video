@@ -1,0 +1,10 @@
+.container-sponsor {
+    height: 250px;
+    width: 100%;
+    background-color: aqua;
+}
+
+.container-sponsor img{
+    height: 100%;
+    width: 100%;
+}

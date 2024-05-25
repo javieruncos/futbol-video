@@ -4,6 +4,8 @@ import { getVideos } from '../../helpers/App';
 import { useParams } from 'react-router-dom';
 import PortadaLiga from '../Ui/PortadaLiga';
 import Footer from '../common/Footer';
+import Sponsors from './Sponsors';
+
 
 
 const Ligas = () => {
@@ -19,7 +21,9 @@ const Ligas = () => {
 
     return (
         <div className='main container'>
-            <PortadaLiga liga={liga}></PortadaLiga>
+            <div className='pt-3'>
+                <PortadaLiga liga={liga}></PortadaLiga>
+            </div>
             <div className='mt-5'>
                 <h5>Todos los partidos</h5>
                 <div>
@@ -62,6 +66,9 @@ const Ligas = () => {
                                 ))
                         }
                     </div>
+                </div>
+                <div className='my-5'>
+                    <Sponsors></Sponsors>
                 </div>
                 <div className='mt-5 mb-3'>
                     <Footer></Footer>

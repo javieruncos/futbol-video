@@ -17,7 +17,7 @@ const MenuLateral = () => {
                 <div className='d-flex align-items-center gap-2 text-secondary'>
                     <div className='ligas'>
                         <div className='containerLogo'>
-                            <Link to="">
+                            <Link to="/ligas/ENGLAND: Premier League">
                                 <div className='d-flex align-items-center gap-2'>
                                     <img src={premier} alt="" />
                                     <span>Premier League</span>
@@ -26,7 +26,7 @@ const MenuLateral = () => {
                         </div>
                         <div className='containerLogo'>
                             <div className='d-flex align-items-center gap-2'>
-                                <Link to="">
+                                <Link to="/ligas/GERMANY: Bundesliga">
                                     <div className='d-flex align-items-center gap-2'>
                                         <img src={bundesliga} alt="" />
                                         <span>Bundesliga</span>
@@ -35,7 +35,7 @@ const MenuLateral = () => {
                             </div>
                         </div>
                         <div className='containerLogo'>
-                            <Link to="">
+                            <Link to="/ligas/SPAIN: La Liga">
                                 <div className='d-flex align-items-center gap-2'>
                                     <img src={liga} alt="" />
                                     <span>La Liga</span>
@@ -43,7 +43,7 @@ const MenuLateral = () => {
                             </Link>
                         </div>
                         <div className='containerLogo'>
-                            <Link to="">
+                            <Link to="/ligas/ITALY: Serie A">
                                 <div className='d-flex align-items-center gap-2'>
                                     <img src={seriea} alt="" />
                                     <span>Serie A</span>
@@ -51,7 +51,7 @@ const MenuLateral = () => {
                             </Link>
                         </div>
                         <div className='containerLogo'>
-                            <Link to="">
+                            <Link to="/ligas/FRANCE: Ligue 1">
                                 <div className='d-flex align-items-center gap-2'>
                                     <img src={liga1} alt="" />
                                     <span>Ligue 1</span>
