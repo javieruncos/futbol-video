@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Sugerencia = ({arreglovideos}) => {
+const Sugerencia = ({arregloVideos}) => {
     return (
         <>
             <div>
@@ -10,7 +10,7 @@ const Sugerencia = ({arreglovideos}) => {
                 <div>
                     <div className='row'>
                         {
-                            arreglovideos.slice(10, 19)
+                            arregloVideos.slice(10, 19)
                                 .map((items, index) => (
                                     <div className='col-12 col-md-4 col-lg-4 my-3' key={index}>
                                         <a href={`/detalle/${items.videos[0].id}`} className='text-decoration-none text-light'>

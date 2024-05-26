@@ -7,18 +7,9 @@ import Publicidad from '../Ui/Publicidad';
 import { getVideos } from '../../helpers/App';
 import logo from "../../assets/img/logo-futbol.png"
 import Footer from '../common/Footer';
+import useVideos from '../../hooks/useVideos';
 const Inicio = () => {
-    const [arrleloVideos, setArrleloVideos] = useState([])
-
-    useEffect(() => {
-        getVideos().then((res) => {
-            console.log(res)
-            setArrleloVideos(res)
-        })
-    }, [])
-
-
-
+    const {arregloVideos} = useVideos()
 
     return (
         <div className='mainInicio mt-4 container'>
@@ -26,13 +17,13 @@ const Inicio = () => {
                 <PortadaMenu></PortadaMenu>
             </div>
             <div className='mt-4 container'>
-                <Categorias categoria={"ITALY: Serie A"} arrleloVideos={arrleloVideos} nombre={"Serie A"}></Categorias>
+                <Categorias categoria={"ITALY: Serie A"} arregloVideos={arregloVideos} nombre={"Serie A"}></Categorias>
             </div>
             <div className='mt-3 container'>
-                <Categorias categoria={"ENGLAND: Premier League"} arrleloVideos={arrleloVideos} nombre={"Premier League"}></Categorias>
+                <Categorias categoria={"ENGLAND: Premier League"} arregloVideos={arregloVideos} nombre={"Premier League"}></Categorias>
             </div>
             <div className='mt-3 container'>
-                <Categorias categoria={"SPAIN: La Liga"} arrleloVideos={arrleloVideos} nombre={"La Liga"}></Categorias>
+                <Categorias categoria={"SPAIN: La Liga"} arregloVideos={arregloVideos} nombre={"La Liga"}></Categorias>
             </div>
 
             <div className='separador my-5'>
@@ -41,10 +32,10 @@ const Inicio = () => {
                 </div>
             </div>
             <div className='mt-3 container'>
-                <Categorias categoria={"FRANCE: Ligue 1"} arrleloVideos={arrleloVideos} nombre={"Ligue 1"}></Categorias>
+                <Categorias categoria={"FRANCE: Ligue 1"} arregloVideos={arregloVideos} nombre={"Ligue 1"}></Categorias>
             </div>
             <div className='mt-3 container'>
-                <Categorias categoria={"GERMANY: Bundesliga"} arrleloVideos={arrleloVideos} nombre={"Bundesliga"}></Categorias>
+                <Categorias categoria={"GERMANY: Bundesliga"} arregloVideos={arregloVideos} nombre={"Bundesliga"}></Categorias>
             </div>
             <div>
                 <Publicidad></Publicidad>

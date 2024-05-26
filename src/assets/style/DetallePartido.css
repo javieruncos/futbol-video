@@ -16,7 +16,6 @@
 
 }
 
-
 .img-card{
     height: 100px;
     width: 240px;
@@ -35,14 +34,12 @@
 }
 
 
-
 @media screen and (max-width: 768px) {
 
-    .detalle-container{
-        height: 420px;
+    .detalle-container {
+        height: 615px;
         width: 100%;
         margin-top: 70px;
-        margin-bottom: 200px;
     }
 
 

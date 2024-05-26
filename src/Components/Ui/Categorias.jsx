@@ -3,7 +3,7 @@ import "../../assets/style/CardVideos.css";
 import ReactHtmlParser from 'html-react-parser';
 import parser from 'html-react-parser';
 import { Link } from 'react-router-dom';
-const Categorias = ({ categoria, arrleloVideos ,nombre}) => {
+const Categorias = ({ categoria, arregloVideos ,nombre}) => {
 
     return (
         <div>
@@ -14,7 +14,7 @@ const Categorias = ({ categoria, arrleloVideos ,nombre}) => {
             <div>
                 <div className='row'>
                     {
-                        arrleloVideos.filter((items) => items.competition === categoria).slice(0, 3)
+                        arregloVideos.filter((items) => items.competition === categoria).slice(0, 3)
                         .map((items, index) => (
                             <div className='col-12 col-md-4 col-lg-4 my-3' key={index}>
                                 <a href={`/detalle/${items.videos[0].id}`} className='text-decoration-none text-light'>

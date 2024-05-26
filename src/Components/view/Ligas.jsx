@@ -6,19 +6,13 @@ import PortadaLiga from '../Ui/PortadaLiga';
 import Footer from '../common/Footer';
 import Sponsors from './Sponsors';
 import Sugerencia from '../Ui/Sugerencia';
+import useVideos from '../../hooks/useVideos';
 
 
 
 const Ligas = () => {
+    const {arregloVideos} = useVideos()
     const { liga } = useParams()
-
-    const [arregloLigas, setArregloLigas] = useState([])
-    useEffect(() => {
-        getVideos().then((res) => {
-            setArregloLigas(res)
-        })
-    }, [])
-
 
     return (
         <div className='main container'>
@@ -31,7 +25,7 @@ const Ligas = () => {
                     <div className='row'>
                         {
 
-                            liga === "Todos" ? arregloLigas.map((items, index) => (
+                            liga === "Todos" ? arregloVideos.map((items, index) => (
                                 <div className='col-12 col-md-4 col-lg-4 my-3' key={index}>
                                     <a href={`/detalle/${items.videos[0].id}`} className='text-decoration-none text-light'>
                                         <div className='cardVideo'>
@@ -48,7 +42,7 @@ const Ligas = () => {
                                     </a>
                                 </div>
                             )) :
-                                arregloLigas.filter((items) => items.competition === liga).map((items, index) => (
+                                arregloVideos.filter((items) => items.competition === liga).map((items, index) => (
                                     <div className='col-12 col-md-4 col-lg-4 my-3' key={index}>
                                         <a href={`/detalle/${items.videos[0].id}`} className='text-decoration-none text-light'>
                                             <div className='cardVideo'>
@@ -72,7 +66,7 @@ const Ligas = () => {
                     <Sponsors></Sponsors>
                 </div>
                 <div>
-                    <Sugerencia arreglovideos={arregloLigas}></Sugerencia>
+                    <Sugerencia arregloVideos={arregloVideos}></Sugerencia>
                 </div>
                 <div className='mt-5 mb-3'>
                     <Footer></Footer>

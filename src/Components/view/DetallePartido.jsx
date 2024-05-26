@@ -43,7 +43,7 @@ const DetallePartido = () => {
                         <div className='containerCard-sugerencia'>
                             {
                                 arreglovideos.slice(0, 3).map((items, index) => (
-                                    <a href={`/detalle/${items.videos[0].id}`} className='text-decoration-none text-light'>
+                                    <a href={`/detalle/${items.videos[0].id}`} className='text-decoration-none text-light' key={index}>
                                         <div className=' cardSugerencia mb-3'>
                                             <div className='img-card'>
                                                 <img src={items.thumbnail} alt="" />
@@ -66,16 +66,16 @@ const DetallePartido = () => {
                 </div>
             </div>
             <div>
-                <Categorias categoria={"ENGLAND: Premier League"} arrleloVideos={arreglovideos} nombre={"Premier League"}></Categorias>
+                <Categorias categoria={"ENGLAND: Premier League"} arregloVideos={arreglovideos} nombre={"Premier League"}></Categorias>
             </div>
             <div className='my-4'>
-                <Categorias categoria={"SPAIN: La Liga"} arrleloVideos={arreglovideos} nombre={"La Liga"}></Categorias>
+                <Categorias categoria={"SPAIN: La Liga"} arregloVideos={arreglovideos} nombre={"La Liga"}></Categorias>
             </div>
             <div className='mt-5'>
                 <Publicidad></Publicidad>
             </div>
             <div className='my-5'>
-                <Sugerencia arreglovideos={arreglovideos}></Sugerencia>
+                <Sugerencia arregloVideos={arreglovideos}></Sugerencia>
             </div>
             <div>
                 <Sponsors></Sponsors>
