@@ -8,8 +8,9 @@ import { getVideos } from '../../helpers/App';
 import logo from "../../assets/img/logo-futbol.png"
 import Footer from '../common/Footer';
 import useVideos from '../../hooks/useVideos';
+import Resultados from '../Ui/Resultados';
 const Inicio = () => {
-    const {arregloVideos} = useVideos()
+    const { arregloVideos } = useVideos()
 
     return (
         <div className='mainInicio mt-4 container'>
@@ -25,17 +26,17 @@ const Inicio = () => {
             <div className='mt-3 container'>
                 <Categorias categoria={"SPAIN: La Liga"} arregloVideos={arregloVideos} nombre={"La Liga"}></Categorias>
             </div>
-
-            <div className='separador my-5'>
-                <div>
-                  <h3>Resumenes de las mejores ligas</h3>
-                </div>
-            </div>
-            <div className='mt-3 container'>
-                <Categorias categoria={"FRANCE: Ligue 1"} arregloVideos={arregloVideos} nombre={"Ligue 1"}></Categorias>
-            </div>
             <div className='mt-3 container'>
                 <Categorias categoria={"GERMANY: Bundesliga"} arregloVideos={arregloVideos} nombre={"Bundesliga"}></Categorias>
+            </div>
+            <div className='separador my-5'>
+                <div>
+                    <h3>Resumenes de las mejores ligas</h3>
+                </div>
+            </div>
+
+            <div className='mt-3'>
+                <Resultados arregloVideos={arregloVideos}></Resultados>
             </div>
             <div>
                 <Publicidad></Publicidad>

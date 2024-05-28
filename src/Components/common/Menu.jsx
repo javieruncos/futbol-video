@@ -23,6 +23,9 @@ const Menu = () => {
                         <Link to={"/"} className='text-decoration-none text-light'>
                             <i className="bi bi-facebook fs-3"></i>
                         </Link>
+                        <Link to={"/"} className='text-decoration-none text-light'>
+                            <i className="bi bi-twitter-x fs-3"></i>
+                        </Link>
                     </div>
                 </div>
             </div>

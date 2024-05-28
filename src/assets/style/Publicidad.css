@@ -19,8 +19,10 @@
 .buttonPublicidad {
     padding: 10px 50px;
     border: 1px solid transparent;
+    border-radius: 10px;
     background-color: grey;
     color: white;
+    
 }
 
 .buttonPublicidad:hover {

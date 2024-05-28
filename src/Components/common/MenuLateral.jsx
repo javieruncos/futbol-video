@@ -50,21 +50,6 @@ const MenuLateral = () => {
                                 </div>
                             </Link>
                         </div>
-                        <div className='containerLogo'>
-                            <Link to="/ligas/FRANCE: Ligue 1">
-                                <div className='d-flex align-items-center gap-2'>
-                                    <img src={liga1} alt="" />
-                                    <span>Ligue 1</span>
-                                </div>
-                            </Link>
-                        </div>
-                        {/* <ul className='list-unstyled d-flex flex-column gap-3'>
-                            <li> <Link to="/ligas/ENGLAND: Premier League">Premier League</Link></li>
-                            <li><Link to="/ligas/ITALY: Serie A">Serie A</Link></li>
-                            <li> <Link to="/ligas/SPAIN: La Liga">La Liga</Link></li>
-                            <li> <Link to="/ligas/FRANCE: Ligue 1">Ligue 1</Link></li>
-                            <li> <Link to="/ligas/GERMANY: Bundesliga">Bundesliga</Link></li>
-                        </ul> */}
                     </div>
                 </div>
             </div>
