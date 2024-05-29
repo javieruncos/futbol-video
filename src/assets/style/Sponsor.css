@@ -1,7 +1,6 @@
 .container-sponsor {
     height: 300px;
     width: 100%;
-    background-color: aqua;
 }
 
 .container-sponsor img{
@@ -13,7 +12,6 @@
     .container-sponsor {
         height: 200px;
         width: 100%;
-        background-color: aqua;
     }
     
     .container-sponsor img{

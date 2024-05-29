@@ -6,7 +6,7 @@
 }
 
 .cardSugerencia{
-    height: 100px;
+    height: 125px;
     width: 100%;
     display: flex;
     font-size: 14px;
@@ -17,8 +17,8 @@
 }
 
 .img-card{
-    height: 100px;
-    width: 240px;
+    height: 100%;
+    width: 400px;
     overflow: hidden;
 
 }
@@ -34,10 +34,10 @@
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 599px) {
 
     .detalle-container {
-        height: 615px;
+        height: 682px;
         width: 100%;
         margin-top: 70px;
     }
@@ -48,4 +48,38 @@
         margin-top: 30px;
     }
     
+}
+
+@media screen and (min-width: 600px) and (max-width: 991px) {
+   
+
+    .containerCard-sugerencia{
+        margin-top: 30px;
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 1024px) and (max-height: 600px) {
+    /* Tus estilos CSS aquí */
+
+    .detalle-container{
+        height: 320px;
+    }
+    .containerCard-sugerencia{
+        height: 300px;
+    }
+
+    .cardSugerencia {
+        height: 93px;
+        width: 100%;
+        display: flex;
+        font-size: 14px;
+        background-color: #191919;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    .img-card{
+        width: 230px;
+    }
 }

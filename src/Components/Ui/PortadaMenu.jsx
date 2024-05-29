@@ -16,7 +16,7 @@ const PortadaMenu = () => {
                     <div className='row'>
                         <div className='col-12 col-md-6 col-lg-6'>
                             <div className='container pt-4 tituloPortada'>
-                                <h1 className='display-1 fw-bold'>Sport Resultados</h1>
+                                <h1 className=' fw-bold'>Fútbol Flash</h1>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                     Commodi cupiditate voluptates autem minima aut delectus?
                                 </p>
@@ -36,7 +36,7 @@ const PortadaMenu = () => {
             <div className='MenuTorneos container'>
                 <div className='container'>
                     <div className='row'>
-                        <div className='col-6 col-3 col-lg-3'>
+                        <div className='col-6 col-md-3 col-lg-3'>
                             <Link to="/ligas/ENGLAND: Premier League">
                                 <div className='equiposMenu'>
                                     <div className='equipoNombre'>
@@ -50,7 +50,7 @@ const PortadaMenu = () => {
                                 </div>
                             </Link>
                         </div>
-                        <div className='col-6 col-3 col-lg-3'>
+                        <div className='col-6 col-md-3 col-lg-3'>
                             <Link to="/ligas/ITALY: Serie A">
                                 <div className='equiposMenu'>
                                     <div className='equipoNombre'>
@@ -64,7 +64,7 @@ const PortadaMenu = () => {
                                 </div>
                             </Link>
                         </div>
-                        <div className='col-6 col-3 col-lg-3'>
+                        <div className='col-6 col-md-3 col-lg-3'>
                             <Link to="/ligas/FRANCE: Ligue 1">
                                 <div className='equiposMenu'>
                                     <div className='equipoNombre'>
@@ -78,7 +78,7 @@ const PortadaMenu = () => {
                                 </div>
                             </Link>
                         </div>
-                        <div className='col-6 col-3 col-lg-3'>
+                        <div className='col-6 col-md-3 col-lg-3'>
                             <Link to="/ligas/SPAIN: La Liga">
                                 <div className='equiposMenu'>
                                     <div className='equipoNombre'>

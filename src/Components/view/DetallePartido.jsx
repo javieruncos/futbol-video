@@ -34,12 +34,12 @@ const DetallePartido = () => {
         <div className='main container'>
             <div className='detalle-container'>
                 <div className='row'>
-                    <div className='col-12 col-md-8 col-lg-8'>
+                    <div className='col-12 col-md-12 col-lg-8'>
                         <div className='bg-primary'>
                             <Video src={video.embedUrl}></Video>
                         </div>
                     </div>
-                    <div className='col-12 col-md-4 col-lg-4'>
+                    <div className='col-12 col-md-12 col-lg-4'>
                         <div className='containerCard-sugerencia'>
                             {
                                 arreglovideos.slice(0, 3).map((items, index) => (

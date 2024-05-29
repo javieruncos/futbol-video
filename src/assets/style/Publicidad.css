@@ -46,13 +46,14 @@
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 599px) {
 
     .publicidad {
-        height: 600px;
+        height: 500px;
         position: relative;
         overflow: hidden;
         border-radius: 10px;
+        padding-top: 10px;
     }
 
     .container-liga {
@@ -69,5 +70,12 @@
         background-color: aqua;
         mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 0) 100%);
     
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 991px) {
+    .column-img img {
+        height: 76%;
+        width: 100%;
     }
 }
