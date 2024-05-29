@@ -49,9 +49,6 @@
   
 }
 
-
-
-
 .navbar{
     width: 100%;
     background-color: #191919;
@@ -66,10 +63,7 @@
     display: none;
 }
 
-
-
 @media screen and (max-width: 768px) {
-
 
     .customNav{
         display: none;

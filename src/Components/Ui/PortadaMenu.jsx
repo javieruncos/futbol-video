@@ -17,8 +17,8 @@ const PortadaMenu = () => {
                         <div className='col-12 col-md-6 col-lg-6'>
                             <div className='container pt-4 tituloPortada'>
                                 <h1 className=' fw-bold'>Fútbol Flash</h1>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Commodi cupiditate voluptates autem minima aut delectus?
+                                <p>¡Bienvenido a nuestro sitio especializado en resúmenes de partidos de fútbol
+                                Desde las ligas locales hasta los torneos internacionales, 
                                 </p>
                                 <div className='mt-4'>
                                     <a href='/ligas/Todos'>Ver todos</a>

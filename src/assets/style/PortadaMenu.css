@@ -8,8 +8,6 @@
     overflow: hidden;
 }
 
-
-
 .portadaMenu img {
     height: 100%;
     width: 100%;
@@ -186,13 +184,12 @@
     }
 
     .tituloPortada {
-        padding-left: 25px;
+        padding-left: 17px;
     }
 
     .tituloPortada h1{
         font-size: 45px;
     }
-
 
     .MenuTorneos {
         height: 203px;
