@@ -6,6 +6,7 @@ const useVideos = () => {
     
     useEffect(() => {
         getVideos().then((res) => {
+            
             setArregloVideos(res)
         })
     }, [])
