@@ -7,7 +7,7 @@ import MenuLateral from './Components/common/MenuLateral';
 import Menu from './Components/common/Menu';
 import DetallePartido from './Components/view/DetallePartido';
 import Ligas from './Components/view/Ligas';
-import Footer from './Components/common/Footer';
+import NotFound from './Components/view/NotFound';
 
 function App() {
 
@@ -22,6 +22,7 @@ function App() {
               <Route path="/" element={<Inicio />} />
               <Route path="/detalle/:id" element={<DetallePartido />} />
               <Route path="/ligas/:liga" element={<Ligas />} />
+              <Route path="/error"  element={<NotFound />} />
             </Routes>
           </div>
         </BrowserRouter>

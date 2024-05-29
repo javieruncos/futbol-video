@@ -4,6 +4,20 @@ import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import logo from "../../assets/img/logo-futbol.png"
 const Menu = () => {
+
+    const redirectToFacebook = (redSocial) => {
+        const url =
+            redSocial === 'instagram' ? 'https://www.facebook.com/?locale=es_LA' :
+                redSocial === 'facebook' ? 'https://www.facebook.com/?locale=es_LA' :
+                    redSocial === 'twitter' ? 'https://twitter.com/' : null
+        // Redirigir al usuario a la página de Facebook
+        if (url) {
+            window.open(url, '_blank');
+        } else {
+            window.open('/error', '_blank');
+        }
+    };
+
     return (
         <>
             <div className='customNav'>
@@ -16,16 +30,16 @@ const Menu = () => {
                         <Link to={"/"} className=' fs-4 links'>Inicio</Link>
                         <Link to={"/ligas/Todos"} className='fs-4 links'>Resumenes</Link>
                     </div>
-                    <div className='d-flex gap-3 pe-2'>
-                        <Link to={"/"} className='text-decoration-none text-light'>
-                            <i className="bi bi-instagram fs-3"></i>
-                        </Link>
-                        <Link to={"/"} className='text-decoration-none text-light'>
-                            <i className="bi bi-facebook fs-3"></i>
-                        </Link>
-                        <Link to={"/"} className='text-decoration-none text-light'>
-                            <i className="bi bi-twitter-x fs-3"></i>
-                        </Link>
+                    <div className='d-flex gap-2 pe-2'>
+                        <button onClick={() => redirectToFacebook('instagram')} className='btn-link-redes'>
+                            <i className="bi bi-instagram fs-4"></i>
+                        </button>
+                        <button onClick={() => redirectToFacebook('facebook')} className='btn-link-redes'>
+                            <i className="bi bi-facebook fs-4"></i>
+                        </button>
+                        <button onClick={() => redirectToFacebook('twitter')} className='btn-link-redes'>
+                            <i className="bi bi-twitter-x fs-4"></i>
+                        </button>
                     </div>
                 </div>
             </div>

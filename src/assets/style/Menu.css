@@ -38,6 +38,17 @@
     width: 60px;
 }
 
+.btn-link-redes{
+    background-color: transparent;
+    color: white;
+    border: none;
+}
+
+.btn-link-redes:hover{
+    color: grey;
+  
+}
+
 
 
 
