@@ -1,0 +1,22 @@
+.container-sponsor {
+    height: 300px;
+    width: 100%;
+}
+
+.container-sponsor img{
+    height: 100%;
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .container-sponsor {
+        height: 200px;
+        width: 100%;
+    }
+    
+    .container-sponsor img{
+        height: 100%;
+        width: 100%;
+    }
+    
+}

@@ -1,0 +1,101 @@
+.customNav{
+    height: 65px;
+    width: 100%;
+    background-color: #191919;
+    color: white;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    display: flex;
+}
+
+.containerLinks{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links{
+    text-decoration: none;
+    color: white;
+}
+
+.links:hover{
+    color: grey;
+}
+
+.logoMenu{
+    height: 100%;
+    width: 235px;
+    display: flex;
+    align-items: center;
+}
+
+.logoMenu img{
+    height: 30px;
+    width: 60px;
+}
+
+.btn-link-redes{
+    background-color: transparent;
+    color: white;
+    border: none;
+}
+
+.btn-link-redes:hover{
+    color: grey;
+  
+}
+
+.navbar{
+    width: 100%;
+    background-color: #191919;
+    color: white;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    display: none;
+}
+
+.ligasMenu{
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+
+    .customNav{
+        display: none;
+    }
+
+
+    .navbar{
+        display: block;
+    }
+
+    .ligasMenu{
+        display:block;
+        color: #191919;
+    }
+
+    .ligasMenu a {
+        text-decoration: none;
+        color: grey;
+    }
+    
+    .ligasMenu a:hover{
+        color: white;
+        transition: 0.5s ease;
+    }
+
+    .logo{
+        height: 30px;
+        width: 60px;
+    }
+    
+    .logoMenu{
+        padding: 0;
+    }
+    
+}

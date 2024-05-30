@@ -1,0 +1,85 @@
+.detalle-container{
+    height: 420px;
+    width: 100%;
+    margin-top: 85px;
+    overflow: hidden;
+}
+
+.cardSugerencia{
+    height: 125px;
+    width: 100%;
+    display: flex;
+    font-size: 14px;
+    background-color: #191919;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+
+.img-card{
+    height: 100%;
+    width: 400px;
+    overflow: hidden;
+
+}
+
+.cardSugerencia img{
+    height: 100%;
+    width: 100%;
+}
+
+.cardSugerencia:hover img{
+    scale: 1.05;
+    transition: 1s ease;
+}
+
+
+@media screen and (max-width: 599px) {
+
+    .detalle-container {
+        height: 682px;
+        width: 100%;
+        margin-top: 70px;
+    }
+
+
+    .containerCard-sugerencia{
+        height: 350px;
+        margin-top: 30px;
+    }
+    
+}
+
+@media screen and (min-width: 600px) and (max-width: 991px) {
+   
+
+    .containerCard-sugerencia{
+        margin-top: 30px;
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 1024px) and (max-height: 600px) {
+    /* Tus estilos CSS aquí */
+
+    .detalle-container{
+        height: 320px;
+    }
+    .containerCard-sugerencia{
+        height: 300px;
+    }
+
+    .cardSugerencia {
+        height: 93px;
+        width: 100%;
+        display: flex;
+        font-size: 14px;
+        background-color: #191919;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    .img-card{
+        width: 230px;
+    }
+}

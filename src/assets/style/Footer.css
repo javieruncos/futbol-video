@@ -1,0 +1,58 @@
+.footer {
+    height: 100px;
+    width: 100%;
+    background-image: url("https://images.alphacoders.com/510/510026.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.capaFooter{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.753);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+
+.capaFooter div{
+    width: 33%;
+}
+
+.redes{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: end;
+}
+
+@media screen and (max-width: 768px) {
+    .footer{
+        height: 200px;
+    }
+
+    .capaFooter{
+        height: 100%;
+        flex-direction: column;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .capaFooter div{
+        width: 100%;
+       display: flex;
+       justify-content: center;
+    }
+
+    .redes{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+}

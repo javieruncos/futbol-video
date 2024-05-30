@@ -1,0 +1,219 @@
+.portadaMenu {
+    height: 300px;
+    width: 100%;
+    background-color: #191919;
+    border-radius: 10px;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.portadaMenu img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.capa-portada {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.644);
+    position: absolute;
+    top: 0;
+}
+
+.tituloPortada{
+    padding-left: 40px;
+}
+
+.tituloPortada h1{
+    font-size: 80px;
+}
+
+.tituloPortada a{
+    padding: 10px 40px;
+    background-color: grey;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    border: 1px solid transparent;
+    transition: 0.4s ease;
+    text-decoration: none;
+}
+
+.tituloPortada a:hover{
+    padding: 10px 40px;
+    background-color: #191919;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    border: 1px solid white;
+
+}
+
+.container-img {
+    height: 300px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.MenuTorneos{
+    margin-top: 30px;
+}
+
+.MenuTorneos a{
+    text-decoration: none;
+    color: white;
+}
+
+.MenuTorneos a:hover{
+    text-decoration: none;
+    color: grey;
+    transition: 0.5s ease;
+}
+
+.capa-portada div img {
+    height: 350px;
+    width: 400px;
+    position: absolute;
+
+}
+
+.MenuTorneos {
+    height: 180px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #151517;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+
+.equiposMenu {
+    height: 120px;
+    width: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.equipoNombre {
+    height: 100px;
+    width: 200px;
+    border: 3px solid rgba(128, 128, 128, 0.26);
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+}
+
+.escudo {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: #28282a;
+    position: absolute;
+    top: -40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.escudo img {
+    height: 30px;
+    width: 60px;
+}
+
+.escudo:hover {
+    background-color: rgb(87, 86, 86);
+    transition: 0.5s ease;
+}
+
+
+@media screen and (max-width: 599px) {
+    .portadaMenu {
+        height: 484px;
+        width: 100%;
+    }
+
+    .tituloPortada {
+        text-align: center;
+        width: 94%;
+        padding-left: 0;
+    }
+
+    .tituloPortada h1{
+        font-size: 45px;
+    }
+
+    .container-img{
+        display: flex;
+        align-items: end;
+    }
+
+    .capa-portada div img {
+        height: 250px;
+        width: 289px;
+    }
+
+
+    .MenuTorneos{
+        height: 340px;
+        margin-top: 20px;
+    }
+
+    .equiposMenu{
+        margin-top: 40px;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 991px) {
+
+    .portadaMenu {
+        height: 244px;
+        width: 100%;
+    }
+
+    .capa-portada div img {
+        height: 242px;
+        width: 277px;
+        position: absolute;
+    }
+
+    .tituloPortada {
+        padding-left: 17px;
+    }
+
+    .tituloPortada h1{
+        font-size: 45px;
+    }
+
+    .MenuTorneos {
+        height: 203px;
+        width: 100%;
+    }
+
+    .equipoNombre {
+        height: 87px;
+        width: 200px;
+        border: 3px solid rgba(128, 128, 128, 0.26);
+        border-radius: 10px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+
+    .escudo {
+        height: 70px;
+        width: 70px;
+    }
+
+    .escudo img {
+        height: 24px;
+        width: 45px;
+    }
+
+}
